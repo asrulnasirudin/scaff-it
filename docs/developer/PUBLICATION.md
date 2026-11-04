@@ -35,7 +35,9 @@ Ignoring a file is not access control, and it does not remove files already trac
 or erase earlier commits. Before publishing, review the staged file list and diff,
 then run the repository safety and required validation checks.
 
-Promote selected public assets deliberately. The current branding handoff exports
-are local material; the selected geometry, colours, and wording are recorded in
-the [brand guide](BRANDING.md). Publishing source changes does not rebuild or
+Promote selected public assets deliberately. `assets/` contains only the selected
+light/dark logo files and the README project-folder preview with its SVG source.
+Full branding handoff bundles, icon exports, old concepts, and unused variants
+stay in ignored `local/`. The selected geometry, colours, and wording are recorded
+in the [brand guide](BRANDING.md). Publishing source changes does not rebuild or
 replace a previously released Windows download.

@@ -61,7 +61,14 @@ Scaff It creates the starting folders and guidance files. People and their AI as
 The brand-board interface and download card are concept applications, not screenshots of the shipping product.
 
 ## Files
-The current exports are maintainer handoff files in ignored local/; they are not included in this source checkout or the published 0.1.0 download. This document records the selected identity and geometry for future asset integration.
+The selected light/dark logos are published in `assets/` as editable SVGs and
+transparent PNGs. The README uses PNGs to preserve the intended lettering across
+systems. `assets/scaff-it-project-preview.svg` and `.png` show an illustrative
+excerpt of the generated folder layout, not a screenshot of the app.
+
+The full brand board, icon handoff exports, and working bundles remain in ignored
+`local/`. Older logo concepts and unused variants stay local. The previously
+published 0.1.0 download does not include these new branding files.
 
 - scaff-it-brand-board.svg / .png: visual review board.
 - scaff-it-logo-light.svg: editable wordmark for light backgrounds.
@@ -71,4 +78,5 @@ The current exports are maintainer handoff files in ignored local/; they are not
 - scaff-it-icon-16.png / scaff-it-icon-32.png: small-size review samples.
 - scaff-it-branding.zip: selected branding files, without exploration variants or generation scripts.
 
-The board's applications are illustrative. These assets do not update the previously published Windows release or public pages.
+The board's applications are illustrative. The README uses the selected public
+assets; these files do not update the previously published Windows release.

@@ -8,11 +8,13 @@ All notable changes are documented here. The format follows
 
 ### Added
 
+- Selected public light/dark logos and an illustrated project-folder preview for the GitHub README.
 - Brand guide for the selected folder logo, flowing S ribbon, gold tab, and small square with a rounded bottom-right corner.
 - Shared cream, gold, garnet, burgundy, and ink palette for interactive menu styling, with plain output for logs, unsupported consoles, and NO_COLOR.
 
 ### Changed
 
+- Restructure the GitHub README to match FrameShelf's product-first format, with user/developer quick starts, feature and documentation tables, feedback, and release status.
 - Introduce Scaff It in plain language around organised project folders and shared information for AI assistants.
 - Update the selected logo tab, brand board, and handoff exports from teal to gold using the shared interface palette.
 
