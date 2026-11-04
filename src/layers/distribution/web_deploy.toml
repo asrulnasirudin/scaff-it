@@ -1,0 +1,13 @@
+id = "web_deploy"
+kind = "distribution"
+label = "Web deployment"
+version = "1"
+profile_format = 1
+description = "Plan to put the project online so people can use it through a browser. Adds publishing guidance; does not upload or publish anything."
+requires = ["platform:web"]
+qa = ["Deployed site matches the tested build"]
+
+[distribution]
+enabled = true
+type = "web_deploy"
+provenance = ["version", "commit", "build_date"]

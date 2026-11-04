@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "name": "Scaff It",
+  "slug": "scaff-it",
+  "description": "Set up your project. Start building.",
+  "category": "tool",
+  "platforms": [
+    {
+      "id": "windows"
+    }
+  ],
+  "targets": [],
+  "stack": [
+    "python"
+  ],
+  "stack_status": "chosen",
+  "state": "new",
+  "layout": {
+    "roles": {
+      "source": {
+        "path": "src",
+        "origin": "scaffolded"
+      },
+      "tests": {
+        "path": "tests",
+        "origin": "scaffolded"
+      },
+      "build": {
+        "path": "build",
+        "origin": "tool_created"
+      },
+      "dist": {
+        "path": "dist",
+        "origin": "tool_created"
+      },
+      "docs_user": {
+        "path": "docs/user",
+        "origin": "scaffolded"
+      },
+      "docs_dev": {
+        "path": "docs/developer",
+        "origin": "scaffolded"
+      },
+      "ai": {
+        "path": ".agent",
+        "origin": "scaffolded"
+      },
+      "local": {
+        "path": "local",
+        "origin": "scaffolded"
+      }
+    },
+    "protected_paths": []
+  },
+  "toolchain": {
+    "python": ">=3.11"
+  },
+  "git": {
+    "enabled": true,
+    "default_branch": "main",
+    "workflow": "simple",
+    "branch_creation": "manual",
+    "worktrees": "optional",
+    "commit_policy": "ask"
+  },
+  "security": {
+    "secrets": "never_commit",
+    "local_only": [
+      "local/",
+      ".aws/",
+      ".ssh/"
+    ],
+    "secret_patterns": [
+      ".env",
+      ".env.*",
+      "*.pem",
+      "*.key",
+      "*.pfx",
+      "*.p12",
+      ".netrc",
+      "_netrc",
+      ".pypirc",
+      ".npmrc"
+    ],
+    "generated": [
+      "build/",
+      "dist/",
+      ".DS_Store",
+      "Thumbs.db",
+      "*.log",
+      ".idea/",
+      ".vscode/"
+    ],
+    "large_file_warn_mb": 5,
+    "watch_patterns": [
+      "credentials.*",
+      "secrets.*",
+      "*.aep",
+      "*.prproj",
+      "*.psb",
+      "*.mov",
+      "*.mp4",
+      "*.mxf",
+      "*.wav",
+      "*.exr"
+    ]
+  },
+  "features": {
+    "local_assets": true,
+    "sensitive_config": false,
+    "user_testing": false
+  },
+  "references": [],
+  "development": {
+    "ai": [
+      "codex"
+    ]
+  },
+  "distribution": {
+    "enabled": false
+  },
+  "profiles": {
+    "format": 1,
+    "layers": [
+      {
+        "kind": "base",
+        "id": "base",
+        "version": "1"
+      },
+      {
+        "kind": "category",
+        "id": "tool",
+        "version": "1"
+      },
+      {
+        "kind": "platform",
+        "id": "windows",
+        "version": "1"
+      },
+      {
+        "kind": "stack",
+        "id": "python",
+        "version": "1"
+      },
+      {
+        "kind": "state",
+        "id": "new",
+        "version": "1"
+      },
+      {
+        "kind": "ai",
+        "id": "agent_workspace",
+        "version": "1",
+        "implied": true
+      },
+      {
+        "kind": "ai",
+        "id": "codex",
+        "version": "1"
+      },
+      {
+        "kind": "distribution",
+        "id": "none",
+        "version": "1"
+      },
+      {
+        "kind": "feature",
+        "id": "local_assets",
+        "version": "1"
+      }
+    ]
+  },
+  "answer_source": {
+    "name": "user",
+    "folder": "default",
+    "location": "user",
+    "description": "user",
+    "category": "user",
+    "platform": "user",
+    "target": "default",
+    "stack": "user",
+    "state": "default",
+    "ai": "user",
+    "distribution": "user",
+    "features": "user",
+    "git": "user",
+    "git_workflow": "user",
+    "first_commit": "user"
+  },
+  "scaffold": {
+    "tool_version": "2.0",
+    "created": "2026-11-04",
+    "managed_files": [
+      {
+        "path": ".agent/CHECKPOINT.md",
+        "template": "v2/agent-checkpoint.md",
+        "sha256": "b073994cc0527ebe0ab6efc9aac8724b0d653624d2a12cd8c674d367fea1eeea"
+      },
+      {
+        "path": ".agent/CODEX.md",
+        "template": "v2/agent-codex.md",
+        "sha256": "746bf5b57639e8f2fa5a56dbbaccda575f92c18f114bc3cd1f7cc544a12ea944"
+      },
+      {
+        "path": ".agent/DECISIONS.md",
+        "template": "v2/agent-decisions.md",
+        "sha256": "42ac07b78ef10d2e6f6f0f54f2a1bc56637d3cd6f61dadc231cf0741c771bf71"
+      },
+      {
+        "path": ".agent/MEMORY.md",
+        "template": "v2/agent-memory.md",
+        "sha256": "8519507abfc86442a87a3fad38719cb50d7228ece69f44866048371a9fff3508"
+      },
+      {
+        "path": ".agent/PLANS.md",
+        "template": "v2/agent-plans.md",
+        "sha256": "f7098645783e4f22578e96f0d0459923b14d896580b4cfb54a2ed39da99743b8"
+      },
+      {
+        "path": ".agent/QA_CHECKLIST.md",
+        "template": "v2/agent-qa.md",
+        "sha256": "1d2aa3601a6445e35e65247ac5cf504c4579959c9e9b887c6e87b7a4fd9f4152"
+      },
+      {
+        "path": ".agent/check.py",
+        "template": "v2/agent-check.py.tpl",
+        "sha256": "b6ed89a6a528ee55b078347f309f6bebbf1706f387ecf8959fc97a2efa7b280e"
+      },
+      {
+        "path": ".agent/context/README.md",
+        "template": "v2/agent-context.md",
+        "sha256": "fc9fbf0ff509e99878bcdf5ef4f2ed8aa1d4135222c3a7c234ab479a8842cb49"
+      },
+      {
+        "path": ".agent/phases/README.md",
+        "template": "v2/agent-phases.md",
+        "sha256": "c5a83e256bfd67ad714bfb3f967560a9630b98823de3b5a2886bb6f09f8a8380"
+      },
+      {
+        "path": ".agent/reviews/README.md",
+        "template": "v2/agent-reviews.md",
+        "sha256": "877eb0b9d5a2bb0b32ed33e45b2186b3ffbbec1665b510f5cb674842dddafee9"
+      },
+      {
+        "path": ".agent/safety_check.py",
+        "template": "v2/agent-safety-check.py",
+        "sha256": "62b192f14b90fd577fd8115418d8688169530aa68de63dd047db87714364a34a"
+      },
+      {
+        "path": ".env.example",
+        "template": "v2/env-example",
+        "sha256": "454721880b4716917be1af929ea06743bee3cd421ecbe2649004db504adee994"
+      },
+      {
+        "path": ".gitignore",
+        "template": "(generated)",
+        "sha256": "404793c18643a873be2f14497900f2550bb3e29cefc265abb322afa96c9a77d9"
+      },
+      {
+        "path": "AGENTS.md",
+        "template": "v2/agents.md",
+        "sha256": "6aa097b69894dc86201a990a4511e71f794c9ea8e246a57b2fd86c069ca5bb3f"
+      },
+      {
+        "path": "PROJECT_SPEC.md",
+        "template": "v2/project-spec.md",
+        "sha256": "80c542aad0f704b5dadeeb446ecbf671e7f0b87b39991ea7b30fe1e8a4b95c58"
+      },
+      {
+        "path": "README.md",
+        "template": "v2/readme.md",
+        "sha256": "920fb7ec939ef82f219b19e902ddb7f19eba8043c7fd77a70a117c98c13ebc1b"
+      },
+      {
+        "path": "docs/developer/README.md",
+        "template": "v2/docs-developer.md",
+        "sha256": "cb18183ca266f8b1610f18c8f8df10bf5a9cc53878a7156ea2b66a1724fb239f"
+      },
+      {
+        "path": "docs/user/README.md",
+        "template": "v2/docs-user.md",
+        "sha256": "b5ac24854173ade0f4a2cbfde4ea4f5158bb873db1a32e6aa0d93a87624b17d9"
+      },
+      {
+        "path": "local/README.md",
+        "template": "v2/local-readme.md",
+        "sha256": "b58b7cae48366dc3c00da069d8c0047d8d5b75e93eb29c62b019248a2bc46753"
+      },
+      {
+        "path": "src/.gitkeep",
+        "template": "(generated)",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tests/.gitkeep",
+        "template": "(generated)",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "managed_blocks": []
+  }
+}

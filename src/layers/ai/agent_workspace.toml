@@ -1,0 +1,29 @@
+id = "agent_workspace"
+kind = "ai"
+label = "Agent workspace (.agent/)"
+version = "1"
+profile_format = 1
+hidden = true
+
+conventions = [
+  "Update `.agent/CHECKPOINT.md` at every clean checkpoint, not mid-task.",
+  "Record why a significant decision was made in `.agent/DECISIONS.md`.",
+  "Put detail in `.agent/context/` and link to it from here.",
+]
+donts = ["Never put secrets or private personal data into `.agent/MEMORY.md`; never paste chat transcripts into it."]
+qa = ["`.agent/CHECKPOINT.md` is current"]
+
+[roles]
+ai = { path = ".agent", origin = "scaffolded", purpose = "AI orchestration: memory, checkpoint, plans, decisions, QA." }
+
+[files]
+".agent/MEMORY.md" = "v2/agent-memory.md"
+".agent/CHECKPOINT.md" = "v2/agent-checkpoint.md"
+".agent/PLANS.md" = "v2/agent-plans.md"
+".agent/DECISIONS.md" = "v2/agent-decisions.md"
+".agent/QA_CHECKLIST.md" = "v2/agent-qa.md"
+".agent/check.py" = "v2/agent-check.py.tpl"
+".agent/safety_check.py" = "v2/agent-safety-check.py"
+".agent/context/README.md" = "v2/agent-context.md"
+".agent/phases/README.md" = "v2/agent-phases.md"
+".agent/reviews/README.md" = "v2/agent-reviews.md"

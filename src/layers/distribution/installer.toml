@@ -1,0 +1,13 @@
+id = "installer"
+kind = "distribution"
+label = "Installer"
+version = "1"
+profile_format = 1
+description = "Plan to give users a setup program that installs the app. Adds release guidance; does not create an installer."
+requires = ["platform:windows|platform:macos|platform:linux"]
+qa = ["Installer installs, launches and uninstalls cleanly on a clean machine"]
+
+[distribution]
+enabled = true
+type = "installer"
+provenance = ["version", "commit", "build_date", "sha256"]

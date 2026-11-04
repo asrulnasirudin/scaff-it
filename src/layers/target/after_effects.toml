@@ -1,0 +1,13 @@
+id = "after_effects"
+kind = "target"
+label = "Adobe After Effects"
+version = "1"
+profile_format = 1
+description = "Choose this when your project runs inside Adobe After Effects, a program for animation and visual effects."
+requires = ["category:extension"]
+ask_version = true
+conventions = ["Use only scripting/plug-in APIs documented for the version in `.project.json`."]
+qa = ["Installs and runs in the target After Effects version"]
+
+[toolchain]
+after_effects = "{version}"

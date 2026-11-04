@@ -1,0 +1,10 @@
+id = "codex"
+kind = "ai"
+label = "Codex"
+version = "1"
+profile_format = 1
+description = "For projects you plan to work on with Codex. Adds instructions for that coding assistant; does not install or connect it."
+implies = ["ai:agent_workspace"]
+
+[files]
+".agent/CODEX.md" = "v2/agent-codex.md"

@@ -1,0 +1,14 @@
+id = "godot"
+kind = "stack"
+label = "Godot (GDScript)"
+version = "1"
+profile_format = 1
+description = "Build a game using the Godot game editor and its GDScript language, which controls what happens in the game."
+requires = ["category:game"]
+ignore = [".godot/"]
+commands = ["# godot --headless --path game --quit"]
+donts = ["Don't edit scene files (.tscn) without asking; edit scripts and data instead.", "Never touch generated engine folders (.godot/)."]
+qa = ["Headless run does not crash"]
+
+[roles]
+source = { path = "game", origin = "scaffolded", purpose = "The Godot project (contains project.godot)." }

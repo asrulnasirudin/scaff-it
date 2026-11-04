@@ -1,0 +1,12 @@
+id = "adobe_uxp"
+kind = "stack"
+label = "Adobe UXP plugin"
+version = "1"
+profile_format = 1
+description = "Build an add-on inside a supported Adobe program using web-style code. Choose this if you already plan to use Adobe UXP."
+requires = ["category:extension", "target:photoshop|target:premiere_pro|target:indesign"]
+recommends = ["distribution:ccx_package"]
+ignore = ["node_modules/"]
+commands = ["# (load and test the plugin with the UXP Developer Tool)"]
+conventions = ["`manifest.json` sits at the plugin root (the contents of `src/`); keep it valid for the target application's minimum version."]
+qa = ["Plugin loads in the UXP Developer Tool without errors", "Packaged .ccx installs on a clean machine"]

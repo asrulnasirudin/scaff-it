@@ -1,0 +1,10 @@
+id = "none"
+kind = "distribution"
+label = "No packaged release yet"
+version = "1"
+profile_format = 1
+description = "Work on the project locally for now. Choose this if you have not decided how other people will receive it."
+default = true
+
+[distribution]
+enabled = false

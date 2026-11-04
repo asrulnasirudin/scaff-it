@@ -1,0 +1,7 @@
+target-version = "py311"
+extend-exclude = ["local", "build", "dist"]
+
+[lint]
+select = ["E4", "E7", "E9", "F"]
+# Preserve existing compact naming and lambda style; enforce correctness checks.
+ignore = ["E731", "E741"]

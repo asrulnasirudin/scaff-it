@@ -1,0 +1,9 @@
+id = "generic"
+kind = "category"
+label = "Generic / undecided"
+version = "1"
+profile_format = 1
+description = "Choose this if you are still exploring your idea. Creates a general starting folder without assuming a particular way to build it."
+conflicts = ["target:*"]
+questions = ["What kind of product is this, and for which platform?", "Which technology stack will it use (decide, then record it in `PROJECT_SPEC.md`)?"]
+conventions = ["Do not create framework-specific source structure until the stack is decided and recorded."]

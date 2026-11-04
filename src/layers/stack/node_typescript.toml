@@ -1,0 +1,17 @@
+id = "node_typescript"
+kind = "stack"
+label = "Node.js + TypeScript"
+version = "1"
+profile_format = 1
+description = "Build software with JavaScript-style code using TypeScript to catch some coding mistakes. Node.js runs that code outside a browser."
+ignore = ["node_modules/"]
+commands = ["# npm install   (ask before running)", "npm run lint", "# npm test", "# npm run build"]
+conventions = ["TypeScript strict mode; no `any` without a comment explaining why."]
+qa = ["Type check and tests pass", "ESLint check passes"]
+
+[toolchain]
+node = ">=22.13"
+
+[files]
+"eslint.config.mjs" = "v2/lint-eslint.mjs"
+"package.json" = "v2/lint-node-package.json"

@@ -1,0 +1,19 @@
+id = "electron"
+kind = "stack"
+label = "Electron (desktop app)"
+version = "1"
+profile_format = 1
+description = "Build a desktop app using the same kinds of code used for websites. The app includes a browser engine to display its windows."
+requires = ["category:app"]
+recommends = ["distribution:installer"]
+ignore = ["node_modules/"]
+commands = ["# npm install   (ask before running)", "# npm test", "# npm start"]
+conventions = ["Keep main-process, preload and renderer code separate; renderer talks to main only through a typed preload API."]
+donts = ["Don't enable Node integration in renderer windows; don't disable context isolation."]
+qa = ["App window opens, closes and relaunches cleanly", "No console errors on startup"]
+
+[roles]
+assets = { path = "assets", origin = "scaffolded", purpose = "Icons, images and fonts bundled with the app." }
+
+[toolchain]
+node = ">=22"

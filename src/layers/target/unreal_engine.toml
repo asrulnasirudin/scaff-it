@@ -1,0 +1,13 @@
+id = "unreal_engine"
+kind = "target"
+label = "Unreal Engine"
+version = "1"
+profile_format = 1
+description = "Choose this when your project is built within Unreal Engine, a tool for games and interactive 3D experiences."
+requires = ["category:extension|category:game"]
+ask_version = true
+donts = ["Never touch generated engine folders (Binaries/, Intermediate/, Saved/, DerivedDataCache/)."]
+ignore = ["Binaries/", "Intermediate/", "Saved/", "DerivedDataCache/"]
+
+[toolchain]
+unreal_engine = "{version}"

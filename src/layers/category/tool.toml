@@ -1,0 +1,10 @@
+id = "tool"
+kind = "category"
+label = "Command-line tool or library"
+version = "1"
+profile_format = 1
+description = "A script that performs a task when you run a command, or reusable code that other programs can use."
+conflicts = ["target:*"]
+questions = ["What does the tool do, with what inputs and outputs?", "Who runs it, and how is it installed?"]
+conventions = ["Keep a thin command-line layer over importable logic so the logic can be tested alone."]
+qa = ["`--help` output is accurate", "Fails with a clear message on bad input"]

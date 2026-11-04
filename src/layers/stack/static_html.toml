@@ -1,0 +1,9 @@
+id = "static_html"
+kind = "stack"
+label = "Static HTML/CSS/JS"
+version = "1"
+profile_format = 1
+description = "Build web pages with HTML for content, CSS for appearance, and JavaScript for interactions, without choosing a larger website framework."
+requires = ["category:website"]
+conventions = ["No build step unless @@DECISIONS_PATH@@ records why one is needed."]
+qa = ["HTML validates", "Page works with JavaScript errors surfaced"]

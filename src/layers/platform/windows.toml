@@ -1,0 +1,8 @@
+id = "windows"
+kind = "platform"
+label = "Windows"
+version = "1"
+profile_format = 1
+description = "For people using Windows computers."
+conventions = ["No hard-coded drive letters or backslash paths; build paths with the language's path API."]
+qa = ["Tested on a clean Windows user profile"]

@@ -1,0 +1,19 @@
+id = "creative"
+kind = "category"
+label = "Creative project"
+version = "1"
+profile_format = 1
+description = "Work such as a video, book, music, artwork, or design. Choose this when the main result is creative work rather than an app."
+conflicts = ["target:*"]
+must_fill = ["docs/developer/style-guide.md"]
+questions = ["What is the concept, tone and audience?", "What is the final format and length?", "What references define the look and feel?"]
+conventions = ["Follow `docs/developer/style-guide.md` for tone and look.", "Keep source material in `assets/`; never overwrite originals."]
+qa = ["Matches the style guide", "Final export plays/opens correctly", "Credits and licences are recorded"]
+
+[roles]
+source = { path = "work", origin = "scaffolded", purpose = "Working files: scripts, edits and compositions in progress." }
+tests = false
+assets = { path = "assets", origin = "scaffolded", purpose = "Source material: footage, audio, fonts, reference images." }
+
+[files]
+"docs/developer/style-guide.md" = "v2/cat-creative-style-guide.md"

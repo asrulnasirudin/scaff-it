@@ -1,0 +1,15 @@
+id = "sensitive_config"
+kind = "feature"
+label = "Sensitive configuration"
+version = "1"
+profile_format = 1
+description = "Adds a guide and an example settings file for private connection details. Put real passwords and access keys only in files excluded from Git."
+donts = ["Never hard-code a secret setting; read it from the environment (see `docs/developer/configuration.md`)."]
+qa = ["No secret values in source, documents or tests"]
+
+[files]
+"docs/developer/configuration.md" = "v2/configuration.md"
+".env.example" = "v2/env-example-sensitive"
+
+[security]
+secret = ["config.local.*"]

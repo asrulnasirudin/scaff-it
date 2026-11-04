@@ -1,0 +1,21 @@
+id = "app"
+kind = "category"
+label = "Application"
+version = "1"
+profile_format = 1
+description = "Software people use to do a task, such as a desktop program, phone app, or a service running behind an app."
+conflicts = ["target:*"]
+must_fill = ["docs/developer/architecture.md"]
+questions = [
+  "What are the 3 core user tasks?",
+  "What data does it store, and where?",
+  "Does it need network access, accounts or auto-update?",
+]
+conventions = [
+  "Decide the architecture in `docs/developer/architecture.md` before writing code.",
+  "Keep UI, logic and storage separated so each can be tested alone.",
+]
+qa = ["Core user tasks work end to end", "App starts and quits cleanly"]
+
+[files]
+"docs/developer/architecture.md" = "v2/cat-app-architecture.md"

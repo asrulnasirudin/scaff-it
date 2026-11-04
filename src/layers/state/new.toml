@@ -1,0 +1,7 @@
+id = "new"
+kind = "state"
+label = "New project"
+version = "1"
+profile_format = 1
+description = "Start a fresh project in a new or empty folder. To add missing scaffold files to an existing project, choose the existing-project option in the main launcher."
+default = true

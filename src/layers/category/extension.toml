@@ -1,0 +1,17 @@
+id = "extension"
+kind = "category"
+label = "Extension / plugin for a host application"
+version = "1"
+profile_format = 1
+description = "An extra feature that runs inside another program, such as an editing tool. You will choose which program it belongs to next."
+requires = ["target:*"]
+must_fill = ["docs/developer/architecture.md"]
+questions = ["What does the extension add to the host application?", "Which host versions must it support?", "How will users install and update it?"]
+conventions = ["Use only APIs documented for the target host version recorded in `.project.json`."]
+qa = ["Installs, enables, disables and uninstalls cleanly in the target host", "Works on a clean host profile"]
+
+[roles]
+source = { path = "src", origin = "scaffolded", purpose = "Extension source (the package that gets installed into the host)." }
+
+[files]
+"docs/developer/architecture.md" = "v2/cat-app-architecture.md"

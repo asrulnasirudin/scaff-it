@@ -1,0 +1,12 @@
+id = "indesign"
+kind = "target"
+label = "Adobe InDesign"
+version = "1"
+profile_format = 1
+description = "Choose this when your project runs inside Adobe InDesign, a program for page layouts such as books and magazines."
+requires = ["category:extension"]
+ask_version = true
+conventions = ["Use only the plugin APIs documented for the version recorded in `.project.json`."]
+
+[toolchain]
+indesign = "{version}"

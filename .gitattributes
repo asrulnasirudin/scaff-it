@@ -1,0 +1,2 @@
+# Templates must have stable bytes on fresh Windows and Unix checkouts.
+src/templates/** text eol=lf

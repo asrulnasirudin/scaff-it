@@ -1,0 +1,7 @@
+id = "macos"
+kind = "platform"
+label = "macOS"
+version = "1"
+profile_format = 1
+description = "For people using Apple Mac computers."
+qa = ["Tested on a clean macOS user account"]

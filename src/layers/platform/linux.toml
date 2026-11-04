@@ -1,0 +1,7 @@
+id = "linux"
+kind = "platform"
+label = "Linux"
+version = "1"
+profile_format = 1
+description = "For people using computers running Linux."
+qa = ["Tested on a clean Linux user account"]

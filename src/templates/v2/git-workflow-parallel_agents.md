@@ -1,0 +1,1 @@
+Workflow: `parallel_agents`. Each agent works on its own branch, preferably in its own Git worktree, so agents never edit the same files at the same time. Recommended: one branch and worktree per agent and per task. Branches and worktrees are never created automatically; ask the owner. Merge only after the checks pass.

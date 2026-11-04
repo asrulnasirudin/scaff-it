@@ -1,0 +1,13 @@
+id = "extension_zip"
+kind = "distribution"
+label = "Installable extension zip"
+version = "1"
+profile_format = 1
+description = "Plan to share your add-on as a ZIP file that users install in its host program. Adds packaging guidance; does not build the ZIP."
+requires = ["category:extension"]
+qa = ["The zip installs from disk in the target host and the manifest validates"]
+
+[distribution]
+enabled = true
+type = "extension_zip"
+provenance = ["version", "commit", "build_date", "sha256"]

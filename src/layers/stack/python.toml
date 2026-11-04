@@ -1,0 +1,17 @@
+id = "python"
+kind = "stack"
+label = "Python"
+version = "1"
+profile_format = 1
+description = "Build scripts, automation, or other programs using the Python programming language."
+ignore = ["__pycache__/", "*.pyc", ".venv/", ".venv-lint/", ".pytest_cache/", ".ruff_cache/"]
+commands = ["# python -m pip install -r requirements-dev.txt   (ask before running)", "python -m ruff check .", "# python -m pytest"]
+conventions = ["Type-hint public functions; keep modules small and importable without side effects."]
+qa = ["Test suite passes", "Ruff lint check passes"]
+
+[toolchain]
+python = ">=3.11"
+
+[files]
+"ruff.toml" = "v2/lint-ruff.toml"
+"requirements-dev.txt" = "v2/lint-python-requirements.txt"

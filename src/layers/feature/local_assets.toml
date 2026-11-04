@@ -1,0 +1,21 @@
+id = "local_assets"
+kind = "feature"
+label = "Local production assets"
+version = "1"
+profile_format = 1
+description = "Adds a local folder for large working files, such as raw footage and design originals. Git leaves these files out of its saved history."
+conventions = ["Heavy production files live in `local/production-assets/`; track only small, required assets in `assets/`."]
+recommendations = ["Heavy production formats are flagged for review, not ignored everywhere. Keep them in `local/`, or decide on Git LFS or external storage."]
+
+[roles]
+local = { path = "local", origin = "scaffolded", purpose = "Local-only working material. Git-ignored; never committed." }
+
+[dirs]
+"local/production-assets" = "Heavy or private production files (local only)."
+"local/references" = "Large reference material (local only)."
+
+[files]
+"local/README.md" = "v2/local-readme.md"
+
+[security]
+watch = ["*.aep", "*.prproj", "*.psb", "*.mov", "*.mp4", "*.mxf", "*.wav", "*.exr"]

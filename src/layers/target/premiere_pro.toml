@@ -1,0 +1,12 @@
+id = "premiere_pro"
+kind = "target"
+label = "Adobe Premiere Pro"
+version = "1"
+profile_format = 1
+description = "Choose this when your project runs inside Adobe Premiere Pro, a program for editing videos."
+requires = ["category:extension"]
+ask_version = true
+conventions = ["Use only the plugin APIs documented for the version recorded in `.project.json`."]
+
+[toolchain]
+premiere_pro = "{version}"

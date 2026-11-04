@@ -1,0 +1,15 @@
+id = "blender"
+kind = "target"
+label = "Blender"
+version = "1"
+profile_format = 1
+description = "Choose this when your project runs inside Blender, a program for 3D modelling, animation, and rendering."
+requires = ["category:extension"]
+recommends = ["stack:python"]
+ask_version = true
+conventions = ["Use only the Blender API documented for the version in `.project.json`; never code against another version."]
+donts = ["Don't install packages into the host's bundled Python without approval."]
+qa = ["Extension loads, runs and unloads without errors in the target Blender version"]
+
+[toolchain]
+blender = "{version}"

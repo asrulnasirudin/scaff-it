@@ -1,0 +1,63 @@
+# Base layer: what every project gets, whatever its category.
+id = "base"
+kind = "base"
+label = "Base"
+version = "1"
+profile_format = 1
+must_fill = ["PROJECT_SPEC.md"]
+questions = [
+  "What is this project, in one sentence, and who is it for?",
+  "What does 'done' look like for the first usable version?",
+  "What is explicitly out of scope?",
+  "What constraints apply (deadline, budget, platform, licences, accessibility)?",
+]
+conventions = [
+  "Follow the startup sequence in this file before changing anything.",
+  "Keep this file short; put detail in linked documents.",
+  "Record notable changes in root `CHANGELOG.md` under `## [Unreleased]`, using only relevant Added, Changed, Deprecated, Removed, Fixed, or Security sections. Keep entries concise and user-facing.",
+  "For each actual version release, move pending changes into `## [MAJOR.MINOR.PATCH] - YYYY-MM-DD`, newest first; retain an empty Unreleased section. Follow Semantic Versioning, preserve earlier history, and skip release entries when nothing changed. Never invent releases, dates, or changes.",
+]
+donts = [
+  "Never read, print, copy or commit secrets (keys, tokens, passwords, `.env`, credentials).",
+  "Never put secrets or private personal data into any document, including notes written for other agents.",
+  "Ask before deleting files, adding dependencies, installing anything, or changing the folder structure.",
+  "Never edit a protected path (listed below) without explicit approval.",
+  "Never commit or push unless `git.commit_policy` in `.project.json` allows it; recommend a checkpoint instead.",
+  "Don't start building until `PROJECT_SPEC.md` has no TODO or TO CONFIRM left.",
+]
+qa = [
+  "`PROJECT_SPEC.md` has no TODO or TO CONFIRM left",
+  "Tests pass (see Commands in `AGENTS.md`)",
+  "No secrets in tracked files",
+  "User-visible changes are reflected in `docs/user/`",
+  "Notable changes are recorded in `CHANGELOG.md`; actual releases have dated Semantic Version entries",
+]
+
+[roles]
+source = { path = "src", origin = "scaffolded", purpose = "Product source code." }
+tests = { path = "tests", origin = "scaffolded", purpose = "Automated tests." }
+build = { path = "build", origin = "tool_created", purpose = "Intermediate build output. Created by build tools; safe to delete." }
+dist = { path = "dist", origin = "tool_created", purpose = "Final deliverables. Created by build/packaging tools." }
+docs_user = { path = "docs/user", origin = "scaffolded", purpose = "End-user documentation." }
+docs_dev = { path = "docs/developer", origin = "scaffolded", purpose = "Maintainer documentation: architecture, conventions, how it is built." }
+assets = false
+ai = false
+legacy = false
+local = false
+research = false
+
+[files]
+"PROJECT_SPEC.md" = "v2/project-spec.md"
+"AGENTS.md" = "v2/agents.md"
+"README.md" = "v2/readme.md"
+"CHANGELOG.md" = "v2/changelog.md"
+"docs/user/README.md" = "v2/docs-user.md"
+"docs/developer/README.md" = "v2/docs-developer.md"
+".env.example" = "v2/env-example"
+
+[security]
+secret = [".env", ".env.*", "!.env.example", "*.pem", "*.key", "*.pfx", "*.p12", ".netrc", "_netrc", ".pypirc", ".npmrc"]
+local_only = [".aws/", ".ssh/"]
+generated = [".DS_Store", "Thumbs.db", "*.log", ".idea/", ".vscode/"]
+watch = ["credentials.*", "secrets.*"]
+large_file_warn_mb = 5

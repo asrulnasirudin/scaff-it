@@ -1,0 +1,11 @@
+id = "winui3"
+kind = "stack"
+label = "WinUI 3 (.NET)"
+version = "1"
+profile_format = 1
+description = "Build a Windows desktop app using Microsoft tools and .NET, the software platform used to run the app."
+requires = ["category:app", "platform:windows"]
+ignore = ["bin/", "obj/", ".vs/", "*.user"]
+commands = ["# dotnet build   (ask before running)"]
+conventions = ["Keep XAML views and application logic separate (MVVM); logic must be testable without the UI."]
+qa = ["App launches and closes cleanly on a clean Windows profile"]

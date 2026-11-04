@@ -1,0 +1,10 @@
+id = "antigravity"
+kind = "ai"
+label = "Antigravity (Gemini)"
+version = "1"
+profile_format = 1
+description = "For projects you plan to work on with Antigravity using Gemini. Adds instructions for that coding assistant; does not install or connect it."
+implies = ["ai:agent_workspace"]
+
+[files]
+"GEMINI.md" = "v2/pointer-gemini.md"

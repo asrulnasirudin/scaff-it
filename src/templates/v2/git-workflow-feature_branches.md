@@ -1,0 +1,1 @@
+Workflow: `feature_branches`. One branch per task (for example `feature/<short-name>`); merge to `main` only after the checks pass. Never commit directly to `main`. Branches are created by the owner, or by an agent only when asked.

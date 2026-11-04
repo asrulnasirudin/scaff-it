@@ -1,0 +1,7 @@
+id = "web"
+kind = "platform"
+label = "Web browser"
+version = "1"
+profile_format = 1
+description = "For people opening the project in a web browser, rather than installing a desktop or phone app."
+qa = ["Works in the current Chrome, Firefox and Safari"]

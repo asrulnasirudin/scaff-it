@@ -1,0 +1,7 @@
+id = "android"
+kind = "platform"
+label = "Android"
+version = "1"
+profile_format = 1
+description = "For people using Android phones or tablets."
+qa = ["Tested on a real device and an emulator at the minimum supported Android version"]

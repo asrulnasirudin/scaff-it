@@ -1,0 +1,24 @@
+id = "game"
+kind = "category"
+label = "Game"
+version = "1"
+profile_format = 1
+description = "A game people play, such as a computer game or board-style game."
+must_fill = ["design/gdd.md"]
+questions = ["What is the core loop?", "What is the target platform and input?", "What is the smallest playable version?"]
+conventions = [
+  "Match `design/gdd.md`; if the code must deviate, record why in @@DECISIONS_PATH@@.",
+  "Data-driven: stats, items and dialogue live in data files, not in code.",
+]
+qa = ["Core loop playable start to finish", "No soft-locks", "Performance target met"]
+
+[roles]
+assets = { path = "assets", origin = "scaffolded", purpose = "Art, audio and other game source material." }
+
+[dirs]
+"design" = "Game design: the GDD, mechanics and level notes."
+
+[files]
+"design/gdd.md" = "v2/cat-game-gdd.md"
+"design/mechanics.md" = "v2/cat-game-mechanics.md"
+"design/levels.md" = "v2/cat-game-levels.md"

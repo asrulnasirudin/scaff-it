@@ -1,0 +1,14 @@
+id = "tauri"
+kind = "stack"
+label = "Tauri (web UI + Rust)"
+version = "1"
+profile_format = 1
+description = "Build a desktop app with web-style screens and Rust code behind them. Choose this if you plan to use both web tools and Rust."
+requires = ["category:app"]
+ignore = ["node_modules/", "src-tauri/target/"]
+commands = ["# npm install   (ask before running)", "# npm run tauri dev"]
+conventions = [
+  "The Rust backend lives in `src-tauri/` and is created by the Tauri tooling; do not hand-create it.",
+  "Commands callable from the web UI must be allowed in `src-tauri/capabilities/`; keep permissions minimal.",
+]
+qa = ["App window opens, closes and relaunches cleanly", "Only the capabilities the app needs are enabled"]

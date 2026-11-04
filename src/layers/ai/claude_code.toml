@@ -1,0 +1,10 @@
+id = "claude_code"
+kind = "ai"
+label = "Claude Code"
+version = "1"
+profile_format = 1
+description = "For projects you plan to work on with Claude Code. Adds instructions for that coding assistant; does not install or connect it."
+implies = ["ai:agent_workspace"]
+
+[files]
+"CLAUDE.md" = "v2/pointer-claude.md"

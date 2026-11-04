@@ -1,0 +1,20 @@
+id = "website"
+kind = "category"
+label = "Website"
+version = "1"
+profile_format = 1
+description = "Pages people visit in a web browser, such as a portfolio, information site, or interactive website."
+conflicts = ["target:*"]
+must_fill = ["docs/developer/sitemap.md"]
+questions = ["Who is the audience and what should a visitor do?", "Which pages are needed?", "Where will it be hosted?"]
+conventions = [
+  "Match `docs/developer/sitemap.md`; change it before adding pages.",
+  "Semantic HTML first; every image has alt text.",
+]
+qa = ["Works on a phone-width screen", "Keyboard navigation works", "No broken links"]
+
+[roles]
+assets = { path = "assets", origin = "scaffolded", purpose = "Images, fonts and media used by the site." }
+
+[files]
+"docs/developer/sitemap.md" = "v2/cat-website-sitemap.md"

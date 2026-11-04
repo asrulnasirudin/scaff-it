@@ -1,0 +1,12 @@
+id = "photoshop"
+kind = "target"
+label = "Adobe Photoshop"
+version = "1"
+profile_format = 1
+description = "Choose this when your project runs inside Adobe Photoshop, a program for editing images and creating artwork."
+requires = ["category:extension"]
+ask_version = true
+conventions = ["Use only the plugin APIs documented for the version recorded in `.project.json`."]
+
+[toolchain]
+photoshop = "{version}"

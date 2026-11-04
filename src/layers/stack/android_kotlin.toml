@@ -1,0 +1,15 @@
+id = "android_kotlin"
+kind = "stack"
+label = "Android (Kotlin)"
+version = "1"
+profile_format = 1
+description = "Build an Android phone or tablet app using the Kotlin programming language and Android development tools."
+requires = ["category:app", "platform:android"]
+ignore = [".gradle/", "local.properties", "*.apk", "*.aab", "captures/"]
+commands = ["# ./gradlew test   (ask before running)"]
+conventions = ["Keep signing keystores and passwords out of the repository; read them from the environment or local properties."]
+recommendations = ["Signing keystores (*.jks, *.keystore) are treated as secrets and ignored."]
+qa = ["Unit tests pass", "Installs and runs on a device at the minimum supported version"]
+
+[security]
+secret = ["*.jks", "*.keystore"]

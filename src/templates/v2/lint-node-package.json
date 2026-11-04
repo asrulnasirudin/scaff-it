@@ -1,0 +1,12 @@
+{
+  "name": "@@SLUG@@",
+  "private": true,
+  "scripts": { "lint": "eslint ." },
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "@eslint/js": "^10.0.1",
+    "typescript-eslint": "^8.72.1",
+    "typescript": "^5.9.0",
+    "globals": "^17.14.0"
+  }
+}

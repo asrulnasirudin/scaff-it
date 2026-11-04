@@ -1,0 +1,26 @@
+id = "teaching"
+kind = "category"
+label = "Teaching module"
+version = "1"
+profile_format = 1
+description = "Lessons, a course, or training materials that help someone learn a subject."
+conflicts = ["target:*"]
+must_fill = ["modules/learning-objectives.md"]
+questions = ["Who are the learners and what do they already know?", "What can they do after the course that they cannot do now?", "How long is each session?"]
+conventions = [
+  "Every module follows `modules/00-template/`; copy it, do not edit it.",
+  "Every exercise and quiz question traces back to a learning objective.",
+]
+qa = ["Every objective has an exercise and a quiz item", "Answer keys are complete", "Reading level fits the audience"]
+
+[roles]
+source = { path = "modules", origin = "scaffolded", purpose = "Lesson modules: outline, notes, exercises, quiz." }
+tests = { path = "assessments", origin = "scaffolded", purpose = "Quizzes, rubrics and answer keys." }
+assets = { path = "assets", origin = "scaffolded", purpose = "Slides, images, datasets and handouts." }
+
+[files]
+"modules/learning-objectives.md" = "v2/cat-teaching-objectives.md"
+"modules/00-template/outline.md" = "v2/cat-teaching-outline.md"
+"modules/00-template/notes.md" = "v2/cat-teaching-notes.md"
+"modules/00-template/exercises.md" = "v2/cat-teaching-exercises.md"
+"modules/00-template/quiz.md" = "v2/cat-teaching-quiz.md"

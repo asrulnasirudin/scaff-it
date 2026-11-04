@@ -1,0 +1,13 @@
+id = "ccx_package"
+kind = "distribution"
+label = "Adobe UXP package (.ccx)"
+version = "1"
+profile_format = 1
+description = "Plan to share an Adobe plugin as a .ccx file that users can install. Adds guidance; does not create the finished package."
+requires = ["stack:adobe_uxp"]
+qa = ["The packaged .ccx installs and the plugin runs"]
+
+[distribution]
+enabled = true
+type = "ccx_package"
+provenance = ["version", "commit", "build_date", "sha256"]

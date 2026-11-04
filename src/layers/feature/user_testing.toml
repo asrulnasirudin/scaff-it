@@ -1,0 +1,27 @@
+id = "user_testing"
+kind = "feature"
+label = "External user testing"
+version = "1"
+profile_format = 1
+description = "Adds folders for feedback you can safely share, plus a separate local folder for private participant details and raw recordings excluded from Git."
+conventions = ["Never put identifiable participant information (names, faces, voices, contact details) in tracked files; raw testing material stays in `local/user-testing/`."]
+donts = ["Never copy raw recordings, notes, participant data or consent forms out of `local/`."]
+qa = ["Findings in `research/` are sanitized: no participant identifiers"]
+questions = ["Who will test it, how are they recruited, and what consent is needed?"]
+
+[roles]
+research = { path = "research", origin = "scaffolded", purpose = "Sanitized research: protocols, findings and reports." }
+local = { path = "local", origin = "scaffolded", purpose = "Local-only working material. Git-ignored; never committed." }
+
+[dirs]
+"research/user-testing/protocols" = "Test plans and scripts."
+"research/user-testing/findings" = "Sanitized findings."
+"research/user-testing/reports" = "Summaries used for decisions."
+"local/user-testing/recordings" = "Raw recordings (local only)."
+"local/user-testing/raw-notes" = "Raw notes (local only)."
+"local/user-testing/participant-data" = "Participant data (local only)."
+"local/user-testing/consent" = "Consent records (local only)."
+
+[files]
+"research/user-testing/README.md" = "v2/research-user-testing.md"
+"local/README.md" = "v2/local-readme.md"
