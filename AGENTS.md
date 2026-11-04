@@ -40,6 +40,7 @@ Never install dependencies or run installers without approval.
 ## Conventions
 - Follow the startup sequence in this file before changing anything.
 - Keep this file short; put detail in linked documents.
+- Keep shared AI guidance concise and public-safe. Put temporary notes and old checkpoints in ignored local/; see docs/developer/PUBLICATION.md.
 - Record notable changes in root `CHANGELOG.md` under `Unreleased`, using relevant Added, Changed, Deprecated, Removed, Fixed, or Security sections. For actual version releases, use dated Semantic Version headings, newest first; retain Unreleased and preserve earlier history. Skip empty releases and never invent history.
 - Keep a thin command-line layer over importable logic so the logic can be tested alone.
 - No hard-coded drive letters or backslash paths; build paths with the language's path API.

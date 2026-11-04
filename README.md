@@ -2,10 +2,13 @@
 
 **Set up your project. Start building.**
 
-Scaff It prepares a consistent project folder with source and test locations,
-documentation, requirements, and instructions for AI coding tools. Answer guided
-questions, review the proposed files, and create the project when you are ready.
-You can also add missing scaffolding to an existing project while preserving its files.
+**One project folder. A clear plan for every AI.**
+
+Scaff It sets up organised folders for your project, with one place for the plan,
+decisions, and progress. Give whichever AI assistant you use the same information
+to work from. Answer guided questions, review the proposed files, and create your
+project folder when you are ready. You can also add missing folders and guidance
+files to an existing project while keeping its current files.
 
 [Download for Windows](https://github.com/asrulnasirudin/scaff-it/releases/latest) ·
 [User guide](docs/user/README.md) · [Developer guide](docs/developer/README.md)
@@ -34,6 +37,7 @@ show a publisher warning. A SHA-256 checksum accompanies the release download.
 - Offers optional local Git initialization. No first commit unless explicitly requested.
 
 It prepares project structure; it does not generate a finished application.
+You and your AI assistants keep the project notes up to date and use them as you work.
 Git is optional. Node.js/npm is needed only for optional JavaScript tooling.
 Generated projects need their own appropriate development runtimes and licenses.
 

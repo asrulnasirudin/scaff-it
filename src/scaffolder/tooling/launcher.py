@@ -2,6 +2,7 @@
 from pathlib import Path
 
 from .. import cli
+from ..theme import paint, themed
 from .existing import _choice, browse_folder
 
 
@@ -25,10 +26,12 @@ def choose_folder() -> Path | None:
         print("That folder does not exist. Choose an existing folder.")
 
 
+@themed
 def main() -> None:
     """Choose the complete new/existing workflow or a focused maintenance action."""
-    print("\nScaff It\nSet up your project. Start building.\n")
-    print("1) Add the full scaffold to an existing project (default)")
+    print(paint("\nScaff It", "panel"))
+    print("Set up your project. Start building.\n")
+    print(paint("1) Add the full scaffold to an existing project (default)", "action"))
     print("   Choose a folder, answer setup questions, and preview missing files to add.")
     print("\n2) Create a new project\n   Choose project settings and preview a new project folder.")
     print("\n3) Set up code checks only\n   Configure Ruff or ESLint, with optional installation.")

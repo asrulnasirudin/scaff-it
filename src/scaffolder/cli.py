@@ -8,6 +8,7 @@ from .apply import ApplyError, apply, classify_target, menu, preview, rollback, 
 from .intake import GUIDANCE, TITLES, STEPS, Intake, IntakeError
 from .layers import LayerError, load_catalog
 from .resolve import ResolveError, resolve
+from .theme import themed
 
 
 def build_parser():
@@ -115,6 +116,7 @@ def _scaffold_existing(a, parser):
         sys.exit(f"Existing project setup error: {exc}")
 
 
+@themed
 def main(argv=None):
     parser = build_parser()
     a = parser.parse_args(argv)

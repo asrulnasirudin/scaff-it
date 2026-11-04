@@ -2,6 +2,7 @@
 from pathlib import Path
 
 from .. import cli
+from ..theme import paint, themed
 
 
 def browse_folder() -> str | None:
@@ -34,9 +35,10 @@ def _choice(prompt: str, allowed: tuple[str, ...], default: str) -> str:
         print("Please choose " + ", ".join(allowed) + ".")
 
 
+@themed
 def main() -> None:
     """Choose a folder and project type, then preview and confirm lint setup."""
-    print("\nExisting Project Setup\n")
+    print(paint("\nExisting Project Setup\n", "panel"))
     print("Set up code checks for Python or JavaScript/TypeScript.")
     print("You will review changes before applying them. Tool installation is a separate choice.")
     try:

@@ -6,6 +6,20 @@ All notable changes are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Brand guide for the selected folder logo, flowing S ribbon, gold tab, and small square with a rounded bottom-right corner.
+- Shared cream, gold, garnet, burgundy, and ink palette for interactive menu styling, with plain output for logs, unsupported consoles, and NO_COLOR.
+
+### Changed
+
+- Introduce Scaff It in plain language around organised project folders and shared information for AI assistants.
+- Update the selected logo tab, brand board, and handoff exports from teal to gold using the shared interface palette.
+
+### Security
+
+- Exclude temporary AI notes, transcripts, checkpoint snapshots, machine-specific assistant settings, and test reports from version control while retaining shared project guidance and product templates.
+
 ## [0.1.0] - 2026-11-04
 
 ### Added

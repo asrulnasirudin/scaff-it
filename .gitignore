@@ -19,6 +19,20 @@ _netrc
 /local/*
 !/local/README.md
 
+# Temporary AI working material; shared guidance stays versioned
+/.agent/checkpoints/
+/.agent/logs/
+/.agent/scratch/
+/.agent/transcripts/
+/.agent/tmp/
+/.agent/**/*.local.md
+/.agent/**/*.scratch.md
+
+# Machine-specific assistant settings (not shared project instructions)
+/.claude/settings.local.json
+/.codex/*.local.toml
+/.codex/*.local.json
+
 # Generated / tool-created
 /build/
 /dist/
@@ -31,6 +45,15 @@ __pycache__/
 *.pyc
 .venv/
 .pytest_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+/htmlcov/
+/coverage.xml
+/*.tmp
+/*.bak
 
 .ruff_cache/
 
