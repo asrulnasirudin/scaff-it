@@ -9,6 +9,16 @@ interface, and importable Python logic. Its tagline is: Set up your project. Sta
 Prepare consistent project folders for individual developers and project owners,
 including source/tests, requirements, documentation, and AI instructions.
 
+Brand message: One project folder. A clear plan for every AI. Use everyday wording
+to explain organised project folders and shared plans, decisions, and progress.
+The selected visual identity is a folder with a gold tab, a flowing S-shaped ribbon,
+and a small square with only its bottom-right corner rounded. See
+`docs/developer/BRANDING.md` for the brand guide. Asset export work does not change
+the published 0.1.0 release. The shared palette is cream #F0E8D0, gold #B09050,
+garnet #A02838, burgundy #6A1828, and ink #200808. The current text-menu interface
+uses this palette in supported interactive terminals and preserves plain output
+for redirected streams, NO_COLOR, and unsupported consoles.
+
 ## Supported behavior
 
 - Preview before writing; allow modification, cancellation, and dry-run.

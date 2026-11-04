@@ -48,6 +48,11 @@ Git means local change history, a branch is a separate line of changes, and a co
 
 Questions are separated by divider lines and headings. Each optional extra has its own numbered block and Yes/No prompt. Descriptions wrap to fit the terminal, up to 88 characters per line, with blank space between options. This applies when revisiting questions through Modify as well.
 
+The guided menu uses cream text, gold headings, and burgundy highlights in supported
+terminal windows. Saved or redirected output stays plain. Set the `NO_COLOR`
+environment variable to use the menu without colours. Folder browsing keeps the
+standard Windows appearance.
+
 ## Included code checks
 
 Choosing Python adds Ruff configuration and `requirements-dev.txt`. After approving development-tool installation, run `python -m pip install -r requirements-dev.txt`, then `python -m ruff check .`.

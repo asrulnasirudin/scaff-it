@@ -10,6 +10,7 @@ import textwrap
 
 from .layers import layers_of, requirement_met
 from .resolve import Choices, default_folder, git_workflows
+from .theme import paint
 
 STEPS = ("name", "location", "description", "category", "platform", "target", "stack", "state",
          "ai", "distribution", "features", "git")
@@ -108,7 +109,7 @@ class Intake:
         print("\n\n" + "=" * width, file=self.out)
         if step is not None:
             self._paragraph(f"QUESTION {STEPS.index(step) + 1} OF {len(STEPS)}", indent=0)
-        self._paragraph(title, indent=0)
+        print(paint(textwrap.fill(title, width=width), out=self.out), file=self.out)
         print("=" * width + "\n", file=self.out)
 
     def _option(self, label: str, description: str) -> None:

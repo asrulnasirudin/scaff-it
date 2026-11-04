@@ -4,6 +4,7 @@ import sys
 from pathlib import PurePosixPath
 
 from .pathsafe import is_link, linked_ancestor
+from .theme import paint
 
 
 class ApplyError(Exception):
@@ -84,12 +85,12 @@ def preview(res, target_state="empty", out=None):
         git_status = "existing configuration and history preserved"
     p("Git:        " + git_status)
     p("Layers:    " + ", ".join(l.ref for l in res.layers if l.ref != "base:base"))
-    p("\nPROPOSED STRUCTURE\n")
+    p(paint("\nPROPOSED STRUCTURE\n", out=out))
     p(render_tree(res))
     p(f"\n{len(res.files)} files will be created.")
     if target_state == "resumable":
         p("Note: the folder holds an earlier, interrupted run. Identical files are kept; missing ones are added.")
-    p("\nSECURITY")
+    p(paint("\nSECURITY", "panel", out=out))
     p("  - Never committed (secrets): " + ", ".join(c["secret"]))
     local = [x + "/" for x in c["local_paths"]] + c["local_only"]
     p("  - Local-only (git-ignored): " + (", ".join(local) if local else "none"))

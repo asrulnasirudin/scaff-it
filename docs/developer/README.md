@@ -1,5 +1,8 @@
 # Maintaining Scaff It
 
+See the [brand guide](BRANDING.md) for the selected logo, colours, and plain-language messaging.
+See [publication guidance](PUBLICATION.md) for shared project documents and local-only material.
+
 ## Layout
 
 - Scaff It.cmd and src/project_scaffolder.py open the complete Windows menu.
