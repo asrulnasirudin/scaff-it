@@ -7,5 +7,5 @@
 - [x] Extracted Windows ZIP verifies runtime/Tk/resources and CLI/menu.
 - [x] Dry-run, new creation, additive preservation, and offline Ruff success/failure pass without host tools on PATH.
 - [x] Component notices and release checksum are retained and verified.
-- [ ] Hosted GitHub checks and the public download pass confirmation.
+- [x] Hosted GitHub checks and the public download pass confirmation.
 - [ ] Clean-profile Windows/VM and real link/junction acceptance completed before claiming full release acceptance.

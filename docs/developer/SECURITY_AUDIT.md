@@ -39,4 +39,4 @@ remain open. The unsigned initial release is not a penetration-test certificatio
 - All 42 profiles, current scanner content, component notices, and standalone package security documentation are retained.
 - ZIP size: 24597880 bytes.
 - ZIP SHA-256: `b1ce46c98269e20b42675092522d23467fc221bf5340470cff4d3a3d910b6937`.
-- Hosted checks and public asset bytes are verified as part of publication; release checksum accompanies the download.
+- [Hosted checks passed](https://github.com/asrulnasirudin/scaff-it/actions/runs/41769541911). The public v0.1.0 ZIP/checksum were independently downloaded and verified; a public clone matches the released source tree.
