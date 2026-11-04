@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-11-04: FrameShelf-style public README
+
+- Follow FrameShelf's README presentation: centered logo and message, navigation, product preview, feature table, user/developer quick starts, development commands, layout, documentation, feedback, and status/terms. Keep Scaff It-specific claims and download instructions accurate.
+- With owner approval, add assets/ containing only the selected light/dark logos (SVG and PNG) and an illustrative project-folder preview (SVG and PNG). Use PNGs in the README to preserve lettering without requiring the viewer's system fonts.
+- Keep old concepts, unused variants, full boards, icon handoffs, and working exports in ignored local/. Distinguish newer source branding from the unchanged public 0.1.0 app.
+
 ## 2026-11-04: public guidance and local working material
 
 - Keep the essential AI instructions, requirements, decisions, current checkpoint, plans, QA, and useful maintainer documents public. Product Markdown templates stay tracked.
