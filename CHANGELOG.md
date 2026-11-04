@@ -14,6 +14,7 @@ All notable changes are documented here. The format follows
 
 ### Changed
 
+- Vertically centre the Scaff It wordmark with the folder symbol in both public logo variants.
 - Restructure the GitHub README to match FrameShelf's product-first format, with user/developer quick starts, feature and documentation tables, feedback, and release status.
 - Introduce Scaff It in plain language around organised project folders and shared information for AI assistants.
 - Update the selected logo tab, brand board, and handoff exports from teal to gold using the shared interface palette.

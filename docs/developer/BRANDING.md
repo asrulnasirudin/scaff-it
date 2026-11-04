@@ -43,6 +43,9 @@ Segoe UI for headings, interface, and prose. Use Regular for body text and Semib
 The wordmarks retain editable SVG text and require Segoe UI for the intended appearance. Outline lettering before a final production handoff where the font may be unavailable. The symbol and app icon are pure vector paths.
 
 ## Logo use
+
+Vertically centre the visible lettering with the folder symbol. Preserve the supplied alignment and spacing in both light and dark wordmarks.
+
 Keep clear space of at least one fifth of the symbol height around the symbol and one quarter of its height around the full lockup. Start with 32 px minimum for the standalone mark and 140 px width for the wordmark; inspect the actual rendered result. The exported 16 px and 32 px icons show the small-size appearance; the 16 px version retains the geometry but loses fine corner detail. Keep proportions, use approved colours, and keep the symbol upright. Do not remove the small square or round its other corners. Use the monochrome version where colour is unavailable. The transparent reversed wordmark needs a dark background.
 
 ## Voice
